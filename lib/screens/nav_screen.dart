@@ -1,4 +1,3 @@
-import 'package:malvhta_holisso/screens/select_words_switch_list_tile_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens.dart';
 
@@ -13,7 +12,6 @@ class _NavScreenState extends State<NavScreen> {
   final _screens = [
     HomeScreen(),
     SelectWordsScreen(),
-    SelectStudyWordsSwitchListPage(),
     StudyWordsScreen(),
     ReviewWordsScreen(),
     SettingsScreen(),
