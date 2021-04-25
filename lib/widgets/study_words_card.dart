@@ -1,18 +1,14 @@
-// import 'package:malvhta_holisso/app_theme.dart';
-// import 'package:malvhta_holisso/constants/theme_constants.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:malvhta_holisso/constants/theme_constants.dart';
-import 'package:malvhta_holisso/entities/word_category.dart';
-// import 'package:malvhta_holisso/entities/flash_card.dart';
-// import 'package:malvhta_holisso/data/categories_data.dart';
+import 'package:malvhta_holisso/entities/entities.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CategoryCard extends StatelessWidget {
-  final WordCategory category;
+class StudyWordCard extends StatelessWidget {
+  final FlashCard wordCard;
 
-  const CategoryCard({Key? key, required this.category}) : super(key: key);
+  const StudyWordCard({Key? key, required this.wordCard}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +18,7 @@ class CategoryCard extends StatelessWidget {
       child: FlipCard(
         direction: FlipDirection.HORIZONTAL,
         onFlipDone: (status) {
-          print('Category ${category.name} flipped.');
+          print('StudyWord ${wordCard.chahtaWord} flipped.');
         },
         front: Card(
           elevation: 4,
@@ -35,7 +31,7 @@ class CategoryCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  category.name,
+                  wordCard.chahtaWord,
                   style: TextStyle(
                     fontSize: 50.0,
                     fontWeight: FontWeight.w500,
@@ -43,7 +39,7 @@ class CategoryCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  category.description,
+                  wordCard.englishWord,
                   style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.w500,
@@ -66,7 +62,7 @@ class CategoryCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  category.name,
+                  wordCard.chahtaWord,
                   style: TextStyle(
                     fontSize: 50.0,
                     fontWeight: FontWeight.w500,
@@ -74,7 +70,7 @@ class CategoryCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  category.description,
+                  wordCard.englishWord,
                   style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.w500,
@@ -82,7 +78,15 @@ class CategoryCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '( Selected )',
+                  wordCard.englishDescription,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w200,
+                    fontFamily: GoogleFonts.crimsonText().fontFamily,
+                  ),
+                ),
+                Text(
+                  wordCard.englishGrammarType,
                   style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.w200,

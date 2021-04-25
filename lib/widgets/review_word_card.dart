@@ -21,7 +21,10 @@ class ReviewWordCard extends StatelessWidget {
       width: 200,
       height: 200,
       child: FlipCard(
-        direction: FlipDirection.HORIZONTAL, // default
+        direction: FlipDirection.HORIZONTAL,
+        onFlipDone: (status) {
+          print('Reveiew Word ${reviewWord.chahtaWord} flipped.');
+        },
         front: Card(
           elevation: 4,
           child: Center(
