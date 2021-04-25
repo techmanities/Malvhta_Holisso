@@ -39,7 +39,7 @@ class CategoryCard extends StatelessWidget {
                 child: Text(
                   category.description,
                   style: TextStyle(
-                    fontSize: 18.0,
+                    fontSize: 16.0,
                     fontWeight: FontWeight.w200,
                   ),
                   maxLines: 2,

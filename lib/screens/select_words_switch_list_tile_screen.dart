@@ -27,7 +27,6 @@ class _SelectStudyWordsSwitchListPageState
       appBar: AppBar(
         title: Text('Choose Word Categories to Study'),
       ),
-      backgroundColor: Colors.lightBlueAccent,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,7 +35,14 @@ class _SelectStudyWordsSwitchListPageState
               children: [
                 SwitchListTile(
                   //secondary: const Icon(Icons.abc),
-                  title: const Text('Animals'),
+                  title: const Text(
+                    'Animals',
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.w500,
+                      // fontFamily: GoogleFonts.crimsonText().fontFamily,
+                    ),
+                  ),
                   subtitle:
                       Text('The words for animals. Cow, Deer, Mouse, etc.'),
                   value: animalWords,

@@ -49,7 +49,7 @@ final List<FlashCard> animalFlashCards = [
   ),
   FlashCard(
     wordCategory: 'animal',
-    chahtaWord: 'katos',
+    chahtaWord: 'Katos',
     englishWord: 'Cat',
     englishDescription: 'Word for a house cat.',
     englishGrammarType: 'Noun',

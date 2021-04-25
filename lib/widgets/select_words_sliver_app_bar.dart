@@ -9,7 +9,7 @@ class ReviewWordsSliverAppBar extends StatelessWidget {
       leadingWidth: 10.0,
       centerTitle: true,
       title: Text(
-        'Flash Card Study',
+        'Flash Card Word Review',
         style: TextStyle(
           fontSize: 30.0,
           fontWeight: FontWeight.w500,

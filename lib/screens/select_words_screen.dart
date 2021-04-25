@@ -1,4 +1,3 @@
-// import 'package:malvhta_holisso/entities/entities.dart';
 import 'package:malvhta_holisso/widgets/review_words_sliver_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:malvhta_holisso/widgets/widgets.dart';

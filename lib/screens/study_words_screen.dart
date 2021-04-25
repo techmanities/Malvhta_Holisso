@@ -1,6 +1,7 @@
 // import 'package:malvhta_holisso/widgets/custom_sliver_app_bar.dart';
 // import 'package:malvhta_holisso/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StudyWordsScreen extends StatelessWidget {
   @override
@@ -35,15 +36,16 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                   subtitle: Text("One (1)",
                       style: TextStyle(
                         fontSize: 30,
-                        fontWeight: FontWeight.w400,
+                        fontWeight: FontWeight.w300,
                       ))),
               headerBuilder: (_, isExpanded) {
                 return Center(
                   child: Text(
-                    "Achvffa",
+                    "Achυffa",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -64,6 +66,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -84,6 +87,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -100,10 +104,11 @@ class _ExpandingItemsState extends State<ExpandingItems> {
               headerBuilder: (_, isExpanded) {
                 return Center(
                   child: Text(
-                    "Vshta",
+                    "Ushta",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -124,6 +129,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -144,6 +150,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -164,6 +171,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -184,6 +192,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -204,6 +213,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
@@ -212,11 +222,13 @@ class _ExpandingItemsState extends State<ExpandingItems> {
             ),
             ExpansionPanel(
               body: ListTile(
-                  subtitle: Text("Ten (10)",
-                      style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.w400,
-                      ))),
+                  subtitle: Center(
+                child: Text("Ten (10)",
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w400,
+                    )),
+              )),
               headerBuilder: (_, isExpanded) {
                 return Center(
                   child: Text(
@@ -224,6 +236,7 @@ class _ExpandingItemsState extends State<ExpandingItems> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      fontFamily: GoogleFonts.crimsonText().fontFamily,
                     ),
                   ),
                 );
