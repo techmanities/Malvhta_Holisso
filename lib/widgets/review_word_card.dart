@@ -1,5 +1,6 @@
 // import 'package:malvhta_holisso/app_theme.dart';
 // import 'package:malvhta_holisso/constants/theme_constants.dart';
+import 'package:flip_card/flip_card.dart';
 import 'package:malvhta_holisso/entities/entities.dart';
 // import 'package:malvhta_holisso/entities/word_category.dart';
 // import 'package:malvhta_holisso/entities/flash_card.dart';
@@ -15,35 +16,37 @@ class ReviewWordCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ExpansionPanelList(
-        children: [
-          ExpansionPanel(
-            body: ListTile(
-              subtitle: Text(
-                reviewWord.englishWord,
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w300,
-                ),
+    return SizedBox(
+      width: 250,
+      height: 250,
+      child: FlipCard(
+        direction: FlipDirection.HORIZONTAL, // default
+        front: Card(
+          elevation: 4,
+          child: Center(
+            child: Text(
+              reviewWord.chahtaWord,
+              style: TextStyle(
+                fontSize: 50.0,
+                fontWeight: FontWeight.w500,
+                fontFamily: GoogleFonts.crimsonText().fontFamily,
               ),
             ),
-            headerBuilder: (_, isExpanded) {
-              return Center(
-                child: Text(
-                  reviewWord.chahtaWord,
-                  style: TextStyle(
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.w500,
-                    fontFamily: GoogleFonts.crimsonText().fontFamily,
-                  ),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              );
-            },
           ),
-        ],
+        ),
+        back: Card(
+          elevation: 4,
+          child: Center(
+            child: Text(
+              reviewWord.englishWord,
+              style: TextStyle(
+                fontSize: 50.0,
+                fontWeight: FontWeight.w500,
+                fontFamily: GoogleFonts.crimsonText().fontFamily,
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

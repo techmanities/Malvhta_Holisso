@@ -7,3 +7,5 @@ https://riverpod.dev
 
 https://pub.dev/packages/miniplayer
 
+https://pub.dev/packages/flip_card
+

@@ -86,7 +86,7 @@ final List<FlashCard> animalFlashCards = [
   FlashCard(
     wordCategory: 'animal',
     chahtaWord: 'Fυni',
-    englishWord: 'squirrel',
+    englishWord: 'Squirrel',
     englishDescription: 'Word for squirrel.',
     englishGrammarType: 'Noun',
     resultsHistory: '',
