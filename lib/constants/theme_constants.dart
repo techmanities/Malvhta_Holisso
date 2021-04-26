@@ -8,3 +8,4 @@ const kWarninngColor = Color(0xFFF3BB1C);
 const kErrorColor = Color(0xFFF03738);
 
 const kDefaultPadding = 20.0;
+const kCardBorderRadius = 20.0;

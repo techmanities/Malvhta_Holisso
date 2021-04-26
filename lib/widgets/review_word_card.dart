@@ -27,6 +27,9 @@ class ReviewWordCard extends StatelessWidget {
         },
         front: Card(
           elevation: 4,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
+          ),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -47,6 +50,9 @@ class ReviewWordCard extends StatelessWidget {
         back: Card(
           color: kPrimaryColor,
           elevation: 4,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
+          ),
           child: Center(
             child: Text(
               reviewWord.englishWord,

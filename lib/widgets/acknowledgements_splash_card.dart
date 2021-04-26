@@ -16,7 +16,7 @@ class AcknowledgementsSplashCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 200,
-      height: 500,
+      height: 600,
       child: FlipCard(
         direction: FlipDirection.HORIZONTAL,
         onFlipDone: (status) {
@@ -25,7 +25,7 @@ class AcknowledgementsSplashCard extends StatelessWidget {
         front: Card(
           elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
           ),
           child: Center(
             child: Column(
@@ -49,7 +49,7 @@ class AcknowledgementsSplashCard extends StatelessWidget {
           color: kPrimaryColor,
           elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
           ),
           child: Center(
             child: Column(
@@ -64,7 +64,7 @@ class AcknowledgementsSplashCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'I would like to thank the following for their Support, Inspiration, Mentoring:',
+                  'I would like to thank the following for their Support, Inspiration, and Mentoring:',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25.0,

@@ -23,7 +23,7 @@ class StudyWordCard extends StatelessWidget {
         front: Card(
           elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
           ),
           child: Center(
             child: Column(
@@ -54,7 +54,7 @@ class StudyWordCard extends StatelessWidget {
           color: kPrimaryColor,
           elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
           ),
           child: Center(
             child: Column(

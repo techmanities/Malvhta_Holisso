@@ -25,7 +25,7 @@ class HomeSplashCard extends StatelessWidget {
         front: Card(
           elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
           ),
           child: Center(
             child: Column(
@@ -58,7 +58,7 @@ class HomeSplashCard extends StatelessWidget {
           color: kPrimaryColor,
           elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(kCardBorderRadius),
           ),
           child: Center(
             child: Column(
@@ -74,6 +74,15 @@ class HomeSplashCard extends StatelessWidget {
                 ),
                 Text(
                   '( Tap to Flip )',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: GoogleFonts.crimsonText().fontFamily,
+                  ),
+                ),
+                Text(
+                  '',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25.0,

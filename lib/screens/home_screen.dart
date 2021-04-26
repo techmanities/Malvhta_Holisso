@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:malvhta_holisso/widgets/acknowledgements_splash_card.dart';
 import 'package:malvhta_holisso/widgets/home_splash_card.dart';
+import 'package:malvhta_holisso/widgets/references_splash_card.dart';
 import 'package:malvhta_holisso/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,6 +16,7 @@ class HomeScreen extends StatelessWidget {
               [
                 HomeSplashCard(),
                 AcknowledgementsSplashCard(),
+                ReferencesSplashCard(),
               ],
             ),
           ),
