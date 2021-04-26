@@ -6,10 +6,11 @@ import 'package:malvhta_holisso/widgets/study_words_card.dart';
 import 'package:malvhta_holisso/widgets/study_words_sliver_app_bar.dart';
 
 class StudyWordsScreen extends StatelessWidget {
-  final List studyCards = animalFlashCards;
+  final List studyCards = phrasesFlashCards;
 
   @override
   Widget build(BuildContext context) {
+    studyCards.shuffle();
     return Scaffold(
       body: CustomScrollView(
         slivers: [

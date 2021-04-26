@@ -45,3 +45,14 @@ $ flutter run -d windows
 
 ### Select Device to run from bottom right of VSCode
 ### Hot Restart Ctrl-Shift-F5
+
+
+---
+
+Release Builds:
+'''
+$ flutter build windows
+$ flutter build web
+
+Verify that the index.html <base href...> is <base href="/web/"> for my host
+copy ./build/web to web host platform
